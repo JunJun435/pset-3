@@ -4,11 +4,11 @@ const MIN = 0.01;
 const MAX = 0.99;
 
 const amount = Number(readlineSync.question("\nEnter a dollar amount: "));
-
+  const coinValue = [.25. .1, .05, .01] //[quarters, dimes, nickels, pennies]
 if (Number.isNaN(amount)) {
-    // print your error message here
+    console.log("\nInvalid");
 } else if (amount < MIN || amount > MAX) {
-    // print your error message here
+    console.log("\nInvalid")
 } else {
-    // write your code for making change here
+    let coins;
 }
