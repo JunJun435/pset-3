@@ -5,12 +5,12 @@ const MAX = Number.MAX_SAFE_INTEGER;
 
 const amount = Number(readlineSync.question("\nEnter a number: "));
 
-if (amount > 0) {
+if (amount > 0 && amount <= MAX) {
   console.log("\nPositive.");
-} else if (amount < 0) {
-  console.log("\nNegative");
+} else if (amount < 0 && amount >= MIN) {
+  console.log("\nNegative.");
 } else if (amount == 0) {
-  console.log("\nZero");
+  console.log("\nZero.");
 } else {
-  console.log("\nInvalid");
+  console.log("\nInvalid.");
 }
