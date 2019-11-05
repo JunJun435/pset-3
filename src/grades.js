@@ -1,22 +1,22 @@
 const readlineSync = require("readline-sync");
 
-const A = MIN = 90, MAX = 100;
-const B = MIN = 80, MAX = 89;
-const C = MIN = 70, MAX = 79;
-const D = MIN = 60, MAX = 69;
-const F = MIN = 0, MAX = 59;
+const grade = readlineSync.question("\nEnter a grade: ");
 
-const grade = realineSync.question("\nEnter a grade: ");
-
-if (grade = A) {
+let threshold
+const a = "90-100";
+const b = "80-90";
+const c = "70-80";
+const d = "60-70";
+const f = "0-60";
+if (grade <= 100 && grade >= 90) {
   console.log("\nYou received an A.")
-} else if (grade = B) {
+} else if (grade < 90 && grade >= 80) {
   console.log("\nYou received an B.")
-} else if (grade = C) {
-  console.log("\nYou received an C")
-} else if (grade = D) {
-  console.log("\nYou received an D")
-} else if (grade = F) {
-  console.log("\nYou received an F")
+} else if (grade < 80 && grade >= 70) {
+  console.log("\nYou received an C.")
+} else if (grade < 70 && grade >= 60 ) {
+  console.log("\nYou received an D.")
+} else if (grade < 60 && grade >= 0) {
+  console.log("\nYou received an F.")
 } else
-  console.log("\nInvalid");
+  console.log("\nInvalid.");
